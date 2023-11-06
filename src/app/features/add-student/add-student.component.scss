@@ -1,0 +1,20 @@
+.head {
+    display: flex;
+    justify-content: center;
+    h1 {
+        margin-top: 2rem;
+        font-weight: bold;
+        font-size: xx-large;
+    }
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+}
+
+.example-container mat-form-field + mat-form-field {
+    margin-left: 8px;
+}
+  
+  

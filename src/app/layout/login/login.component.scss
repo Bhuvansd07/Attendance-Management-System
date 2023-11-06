@@ -1,0 +1,32 @@
+.intro{
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    text-align: center;
+    background-color: #f4f3ee;
+
+    .imgi{
+
+        img{
+            width: 23rem;
+            height: 15rem;
+        }
+    }
+
+    .form{
+        padding-top: 0.5rem;
+
+        .data{
+            width: 30%;
+            padding-top: 1rem;
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        .form3Example1c{
+            width: 70%;
+        }
+    }
+}

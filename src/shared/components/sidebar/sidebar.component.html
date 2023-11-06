@@ -1,0 +1,36 @@
+<nav id="sidebar" class="sidebar js-sidebar">
+    <div class="sidebar-content js-simplebar">
+
+        <ul class="sidebar-nav my-4">
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" routerLink="dashboard" [routerLinkActive]="'active'">
+                    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+                    <span class="align-middle">Dashboard</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" routerLink="add-student" [routerLinkActive]="'active'">
+                    <mat-icon>add_box</mat-icon>
+                    <span class="align-middle">Add Student</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" routerLink="view-attendance" [routerLinkActive]="'active'">
+                    <mat-icon>view_list</mat-icon>
+                    <span class="align-middle">Mark Attendance</span>
+                </a>
+            </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" routerLink="chart" [routerLinkActive]="'active'">
+                    <mat-icon> bar_chart</mat-icon>
+                    <span class="align-middle">Chart</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</nav>

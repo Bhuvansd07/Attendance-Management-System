@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="head">
+        <h1>Add Student Details</h1>
+    </div>
+    <form [formGroup]="studentForm!"></form>
+    <div class="row my-5 details">
+        <div class="col-lg-4 mx-5">
+            <mat-form-field appearance="outline">
+                <mat-label>Student ID</mat-label>
+                <input matInput type="text"  formControlName="studentID"/>
+                <mat-hint style="color: red;" *ngIf="studentForm?.get('studentID')?.invalid && studentForm?.get('studentID')?.dirty&& studentForm?.get('studentID')?.touched"><span>*This field is not valid</span></mat-hint>
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4 mx-5">
+            <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="name">
+                <span style="color: red;" *ngIf="name && name.invalid && name.touched">*This field is not valid</span>
+                </mat-form-field>
+        </div>
+    </div>
+    <div class="row my-2 details">
+        <div class="col-lg-4 mx-5">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput >
+            </mat-form-field>
+        </div>
+        <div class="col-lg-4 mx-5">
+                <mat-form-field appearance="outline">
+                  <mat-label>Phone</mat-label>
+                  <input matInput >
+                </mat-form-field>
+        </div>
+    </div>
+    <div class="row mt-5 mb-4 details">
+        <div class="d-flex col-lg-4 mx-5">
+            <mat-form-field [color]="colorControl.value!">
+                <mat-label>Gender</mat-label>
+                <mat-select [formControl]="colorControl">
+                  <mat-option value="primary">Male</mat-option>
+                  <mat-option value="accent">Female</mat-option>
+                  <mat-option value="warn">Others</mat-option>
+                </mat-select>
+              </mat-form-field>              
+        </div>
+    </div>
+    <div class="d-flex justify-content-center mx-2 mb-3 me-5 mb-lg-4">
+        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+    </div>
+</div>

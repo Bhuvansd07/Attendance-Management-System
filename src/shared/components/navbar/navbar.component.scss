@@ -1,0 +1,24 @@
+.head{
+    display: flex;
+    padding: 1rem 0rem 0rem 3rem;
+    background-color: #f4f3ee;
+
+    .imgi{
+        width: 45%;
+
+        img{
+            width:55%;
+            height:95%;
+        }
+    }
+
+    .contains{
+        width: 52%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+
+
